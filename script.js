@@ -1,9 +1,11 @@
+
 function playIntro() {
-    document.querySelector('.hero').style.display = 'none';
-    var video = document.getElementById('introVideo');
-    video.style.display = 'block';
-    video.play();
-    video.onended = function() {
-        window.location.href = "homepage.html";
-    };
+  document.getElementById("intro").style.display = "none";
+  const video = document.getElementById("introVideo");
+  video.style.display = "block";
+  video.play();
+  video.onended = () => {
+    video.style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+  };
 }

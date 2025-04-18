@@ -1,20 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Run Surround</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Run Surround</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="hero">
-        <h1>Run Surround?</h1>
-        <button onclick="playIntro()">yes</button>
+  <div class="intro-screen" id="intro">
+    <img src="bg.jpg" alt="Background" class="bg-image"/>
+    <div class="intro-text">
+      <h1>Run<br>Surround?</h1>
+      <button onclick="playIntro()">yes</button>
     </div>
-    <video id="introVideo" width="100%" style="display:none;" autoplay muted>
-        <source src="run_intro.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <script src="script.js"></script>
+  </div>
+  
+  <video id="introVideo" class="fullscreen-video" autoplay muted>
+    <source src="run_intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="main-content" id="mainContent">
+    <div class="hero">
+      <h1 class="slogan">Run Surround and Free.</h1>
+    </div>
+    <section class="moments">
+      <h2>Surround Moments</h2>
+      <div class="moment-list">
+        <div><img src="tokyo.jpg" alt="Tokyo City Run"><p>Tokyo City Run</p></div>
+        <div><img src="seoul.jpg" alt="Seoul City Run"><p>Seoul City Run</p></div>
+        <div><img src="alps.jpg" alt="Swiss Alps Trail"><p>Swiss Alps Trail</p></div>
+      </div>
+    </section>
+    <section class="lookbook">
+      <h2>Lookbook</h2>
+      <div class="lookbook-items">
+        <div><img src="shirt.jpg" alt="Shirt"></div>
+        <div><img src="bag.jpg" alt="Bag"></div>
+        <div><img src="shorts.jpg" alt="Shorts"></div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
