@@ -1,11 +1,12 @@
 
-function playIntro() {
-  document.getElementById("intro").style.display = "none";
-  const video = document.getElementById("introVideo");
-  video.style.display = "block";
+document.getElementById("start-btn").onclick = function () {
+  document.getElementById("intro-section").classList.add("hidden");
+  document.getElementById("video-section").classList.remove("hidden");
+
+  const video = document.getElementById("intro-video");
   video.play();
-  video.onended = () => {
-    video.style.display = "none";
-    document.getElementById("mainContent").style.display = "block";
+  video.onended = function () {
+    document.getElementById("video-section").classList.add("hidden");
+    document.getElementById("main-section").classList.remove("hidden");
   };
-}
+};
