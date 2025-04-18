@@ -1,19 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Run Surround</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Surround</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="intro-screen" class="intro-screen">
-    <h1>Run Surround?</h1>
-    <button id="yes-button">yes</button>
-  </div>
-  <video id="intro-video" style="display: none;" autoplay muted playsinline>
-    <source src="run_intro.mp4" type="video/mp4" />
-  </video>
-  <script src="script.js"></script>
+    <div class="hero">
+        <h1>Run Surround?</h1>
+        <button onclick="playIntro()">yes</button>
+    </div>
+    <video id="introVideo" width="100%" style="display:none;" autoplay muted>
+        <source src="run_intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script src="script.js"></script>
 </body>
 </html>
