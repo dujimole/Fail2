@@ -8,43 +8,41 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="intro-section" class="section">
-    <img src="bg.jpg" alt="Background" class="background" />
+  <div id="intro" class="intro">
+    <img src="bg.jpg" class="bg"/>
     <div class="overlay">
       <h1>Run Surround?</h1>
-      <button id="start-btn">yes</button>
+      <button id="yesBtn">Yes</button>
     </div>
   </div>
 
-  <div id="video-section" class="section hidden">
-    <video id="intro-video" autoplay muted>
+  <div id="videoSection" class="video-section">
+    <video id="introVideo" muted playsinline>
       <source src="run_intro.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
     </video>
   </div>
 
-  <div id="main-section" class="section hidden">
+  <div id="home" class="home">
     <div class="hero">
       <h1>Run Surround and Free.</h1>
     </div>
     <section class="moments">
       <h2>Surround Moments</h2>
-      <div class="grid">
-        <div><img src="moment1.jpg" alt=""><p>Tokyo City Run</p></div>
-        <div><img src="moment2.jpg" alt=""><p>Seoul City Run</p></div>
-        <div><img src="moment3.jpg" alt=""><p>Swiss Alps Trail</p></div>
+      <div class="moment-gallery">
+        <img src="tokyo.jpg" alt="Tokyo City Run">
+        <img src="seoul.jpg" alt="Seoul City Run">
+        <img src="alps.jpg" alt="Swiss Alps Trail">
       </div>
     </section>
     <section class="lookbook">
       <h2>Lookbook</h2>
-      <div class="grid">
-        <div><img src="item1.jpg" alt=""></div>
-        <div><img src="item2.jpg" alt=""></div>
-        <div><img src="item3.jpg" alt=""></div>
+      <div class="lookbook-gallery">
+        <img src="shirt.jpg" alt="Shirt">
+        <img src="bag.jpg" alt="Bag">
+        <img src="shorts.jpg" alt="Shorts">
       </div>
     </section>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
