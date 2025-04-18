@@ -2,32 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Run Surround</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="overlay">
+  <div id="intro-screen" class="intro-screen">
     <h1>Run Surround?</h1>
-    <button id="yesButton">yes</button>
+    <button id="yes-button">yes</button>
   </div>
-  <video id="introVideo" style="display: none;" autoplay muted playsinline>
+  <video id="intro-video" style="display: none;" autoplay muted playsinline>
     <source src="run_intro.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
   </video>
-  <script>
-    const button = document.getElementById("yesButton");
-    const video = document.getElementById("introVideo");
-    const overlay = document.querySelector(".overlay");
-    button.addEventListener("click", () => {
-      overlay.style.display = "none";
-      video.style.display = "block";
-      video.play();
-    });
-    video.addEventListener("ended", () => {
-      window.location.href = "homepage.html";
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
