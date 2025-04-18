@@ -1,5 +1,6 @@
 
-function playVideo() {
-  document.getElementById("intro").style.display = "none";
-  document.getElementById("videoContainer").style.display = "block";
-}
+const video = document.getElementById("introVideo");
+
+video.addEventListener("ended", () => {
+  window.location.href = "homepage.html";
+});
